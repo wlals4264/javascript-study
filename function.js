@@ -1,3 +1,4 @@
+"use strict";
 // function = subprogram 절차적언어일수록 함수의 역할이 중요해짐
 // 함수에는 input output이 중요하고 이름이 굉장히 중요(어떤일을 하는지 알 수 있도록)
 
