@@ -69,7 +69,8 @@ const greeting = "hello " + brendan; //string과 변수 조합 가능
 console.log(`value: ${greeting}, type: ${typeof greeting}`);
 const helloBob = `hi ${brendan}!`; //template literals (sting)
 console.log(`value: ${helloBob}, type: ${typeof helloBob}`);
-console.log("value: " + helloBob + " type: " + typeof helloBob); // 결과값은 위와 같지만 백틱과 문자열로 자동변환해주는 ${}을 사용했을 때 더 간편하게 코딩할 수 있음
+console.log("value: " + helloBob + " type: " + typeof helloBob);
+// 결과값은 위와 같지만 백틱과 문자열로 자동변환해주는 ${}을 사용했을 때 더 간편하게 코딩할 수 있음
 
 // boolean
 // false: 0, null, undefined, NaN, ""

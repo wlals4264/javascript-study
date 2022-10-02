@@ -22,7 +22,7 @@ function log(message) {
   console.log(message);
 }
 log("hello!");
-// 함수자체가 어떤 타입의 인자가 필요한지 명확히 알 수 없음 -> 타입스크립트를 배워야하는 이유
+// 함수자체가 어떤 타입의 인자가 필요한지 명확히 알 수 없음 -> 나중에 타입스크립트를 배워야하는 이유
 
 // 2. Parameters
 // premitive parameters: passed by value
@@ -34,7 +34,7 @@ const bluemin = { name: "Jammy" };
 changeName(bluemin);
 console.log(bluemin);
 
-// 3. Default parametes (added in ES6)
+// 3. Default parameters (added in ES6)
 // function showMessage(message, from) {
 //   if (from === undefined) {
 //     from = "unknown";
@@ -84,8 +84,8 @@ function sum(a, b) {
 const result = sum(1, 2); // 3
 console.log(`sum: ${sum(1, 2)}`);
 
-// 7. ㄷEarly return, early exit
-// bad
+// 7. Early return, early exit
+// bad example
 function upgradeUser(user) {
   if (user.point > 10) {
     // long upgrade logic...
@@ -120,7 +120,7 @@ printAgain();
 const sumAgain = sum;
 console.log(sumAgain(1, 3));
 // function expression은 할당된 다음 호출이 가능한 반면,
-// function declaration은 hoisting이 됨.
+// function declaration(함수를 정의하는 것)은 hoisting이 됨.
 // 즉, 함수가 선언되기 이전에 호출해도 실행 가능함(JS가 선언된 것을 맨 위로 올려주기 때문)
 
 // 2. Callback function using function expression
@@ -132,7 +132,7 @@ function randomQuiz(answer, printYes, printNo) {
     printNo();
   }
 }
-//anonymous
+//anonymous function
 const printYes = function () {
   console.log("yes!");
 };
@@ -147,7 +147,7 @@ randomQuiz("wrong", printYes, printNo);
 randomQuiz("love you", printYes, printNo);
 
 // Arrow function
-// alwways anonymous
+// always anonymous
 // const simplePrint = function () {
 //   console.log("simplePrint");
 // };
@@ -159,7 +159,29 @@ const simpleMultiply = (a, b) => {
   return a * b; // block을 사용하면 return해줘야함
 };
 
-// IIFE: Immediately Invoked Function Expression
+// IIFE: Immediately Invoked Function Expression 함수 선언을 () 묶고 () 호출해주면 바로 실행가능
 (function hellp() {
   console.log("IIFE");
 })();
+
+// Quiz
+// function calculate(cammand, a, b)
+// command: add, subtract, divide, multiply, remainder
+
+function calculate(command, a, b) {
+  switch (command) {
+    case "add":
+      return a + b;
+    case "subtract":
+      return a + b;
+    case "divide":
+      return a + b;
+    case "multiply":
+      return a + b;
+    case "remainder":
+      return a % b;
+    default:
+      throw Error("unknown command");
+  }
+}
+console.log(calculate("add", 4, 5));

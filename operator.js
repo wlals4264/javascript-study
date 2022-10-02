@@ -8,7 +8,7 @@ console.log(1 + 1); // add
 console.log(1 - 1); // substract
 console.log(1 / 1); // divide
 console.log(1 * 1); // multiply
-console.log(5 % 2); // remainder
+console.log(5 % 2); // remainder 나머지
 console.log(2 ** 3); // exponentiation
 
 // 3. Increment and decrement operators(++,--)
