@@ -1,6 +1,7 @@
 "use stric";
+
 // Object-orendted programming
-// class: template
+// class : template
 // object : instance of a class
 // JavaScript classes
 //  - introduced in ES6

@@ -50,6 +50,7 @@ function showMessage(message, from = "unknown") {
 showMessage("Hi!");
 
 // 4. Rest parameters (added in ES6)
+// 배열 인자
 function printAll(...args) {
   for (let i = 0; i < args.length; i++) {
     console.log(args[i]);
@@ -58,8 +59,9 @@ function printAll(...args) {
   for (const arg of args) {
     console.log(arg);
   }
-
+  // for of 문법 활용 가능
   args.forEach((arg) => console.log(arg));
+  //forEach API 활용
 }
 printAll("dream", "coding", "bluemin");
 
@@ -73,7 +75,7 @@ function printMessage() {
     console.log(message);
     let childMessage = "hello";
   }
-  //   console.log(childMessage); //error : 안에서는 밖에 보이지만 밖에서는 안을 볼 수 없다
+  // console.log(childMessage); //error : 안에서는 밖에 보이지만 밖에서는 안을 볼 수 없다
   // return undefined;(리던타입이 없는 함수들은 언디파인드가 생략되어있음)
 }
 printMessage();

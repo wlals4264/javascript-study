@@ -1,13 +1,13 @@
 // 자료구조 (어떤 방식, 어떤 형식으로 데이터를 담느냐에 따라 다양한 종류가 있다)
 // object와 자료구조의 차이
-// object : 토끼
-// 비슷한 형태의 object들을 모아둔 것이 자료구조
-// 보통 다른 언어들은 담긴 object들은 동일한 type을 담을 수가 있다
+// object 서로 연관된 특징과 행동들을 묶어두는 것 (ex. 토끼는 달린다, 먹는다라는 method가지고 있고 귀가 두개이다라는 속성을 가지고 있다)
+// 비슷한 형태의 object들을 모아둔 것이 자료구조 (ex. 하나의 바구니 안에 담는것, 당근은 당근끼리, 토끼는 토끼끼리)
+// 보통 다른 언어들은 자료구조에 담긴 object들은 동일한 type의 data만 담을 수가 있다
 // JavaScript === dynamically typed language 그래서 다양한 타입 담을 순 있으나 비추
 // 자료구조와 알고리즘 중요!
-// 자료구조 array set map list
-// 각각 어떤 자료구조, 알고리즘을 쓰면 좋을지 효율성에 대한 것이 알고리즘!
-// 꼭 공부하자. 자료구조&알고리즘
+// 자료구조 : array set map list
+// 효율성에 대한 것이 알고리즘!
+// 꼭 공부하자. 자료구조 & 알고리즘
 
 "use stric";
 
@@ -75,7 +75,7 @@ fruits.push("🍓", "🍑", "🍋");
 console.log(fruits);
 fruits.splice(1, 1); // 갯수를 지정하지 않으면 시작점부터 끝까지 다 지워짐
 console.log(fruits);
-fruits.splice(1, 1, "🍏", "🍉");
+fruits.splice(1, 1, "🍏", "🍉"); // 지정된 포지션에 아이템을 지우고 새로 넣기
 console.log(fruits); //  ['🍎', '🍏', '🍉', '🍑', '🍋']
 
 // combine two arrays
@@ -85,7 +85,6 @@ console.log(newFruits);
 
 // 5. Searching
 // find the index
-console.clear();
 console.log(fruits);
 // indexOf: find the index
 console.log(fruits.indexOf("🍎"));
@@ -97,7 +96,6 @@ console.log(fruits.includes("🍉"));
 console.log(fruits.includes("🍊"));
 
 // lastIndexOf
-console.clear();
 fruits.push("🍎");
 console.log(fruits);
 console.log(fruits.indexOf("🍎"));
